@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendador de Juegos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            text-align: center;
+            padding: 20px;
+            border: 5px solid #FFD700;
+            border-radius: 10px;
+            background-color: #1a1a1a;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1,
+        h2 {
+            color: #FFD700;
+        }
+
+        button {
+            background-color: #FFD700;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e6c200;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Recomendador de Juegos</h1>
+        <p>Ingresa los juegos que has jugado y te recomendaremos otros que podrían gustarte.</p>
+
+        <form id="form-juegos">
+            <input type="text" id="juego" placeholder="Escribe un juego y presiona Enter">
+            <ul id="lista-jugados"></ul>
+            <button type="submit">Obtener recomendaciones</button>
+        </form>
+
+        <div id="recomendaciones" class="resultado oculto">
+            <h2>Te podrían gustar:</h2>
+            <ul id="lista-recomendaciones"></ul>
+        </div>
+    </div>
+
+    <script src="recomendador.js">
+
+    </script>
+</body>
+
+</html>
